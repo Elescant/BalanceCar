@@ -1,0 +1,9 @@
+
+STM32F4xx_StdPeriph_Driver/Device
+STM32F4xx_StdPeriph_Driver/inc
+STM32F4xx_StdPeriph_Driver/templates
+FreeRTOS
+Project/RTE/Device/STM32F407VG
+FreeRTOS/include
+Project/RTE
+FreeRTOS/source
