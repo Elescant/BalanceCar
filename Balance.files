@@ -97,3 +97,5 @@ Project/RTE/Device/STM32F407VG/RTE_Device.h
 Project/RTE/Device/STM32F407VG/stm32f4xx_conf.h
 Project/RTE/Device/STM32F407VG/system_stm32f4xx.c
 Project/RTE/RTE_Components.h
+HalDriver/HAL_Usart.c
+HalDriver/HAL_Usart.h

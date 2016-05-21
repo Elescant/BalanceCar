@@ -7,3 +7,4 @@ Project/RTE/Device/STM32F407VG
 FreeRTOS/include
 Project/RTE
 FreeRTOS/source
+HalDriver

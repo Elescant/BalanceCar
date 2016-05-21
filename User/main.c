@@ -1,11 +1,14 @@
 #include "stm32f4xx.h"                  // Device header
 #include "stm32f4xx_conf.h"
+//FreeRTOS
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
 #include "list.h"
 #include "portable.h"
 #include "FreeRTOSConfig.h"
+//usart
+#include "HAL_Usart.h"
 
 static void vLED1_Task(void *pvParameters);
 static void vLED2_Task(void *pvParameters);
@@ -15,7 +18,9 @@ void LED_Init(void);
 
 int main()
 {
-	LED_Init();
+    LED_Init();
+    HAL_Usart_Init();
+
 	xTaskCreate(vLED1_Task,(char *)"LED1",configMINIMAL_STACK_SIZE
 		,NULL,tskIDLE_PRIORITY+1,NULL);
 		xTaskCreate(vLED2_Task,(char *)"LED2",configMINIMAL_STACK_SIZE
